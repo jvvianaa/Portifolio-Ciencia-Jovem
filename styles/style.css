@@ -1,0 +1,342 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@media (max-width: 500px) {
+:root {
+    --cor-fundo: #162030;
+    --cor-secundaria: white;
+    --cor-terciaria: #0068b5;
+    --cor-hover: #6b6969;
+    --cor-rodape: #3f5880;
+    --cor-nome: #006abb;
+
+    --fonte-primaria: 'Poppins', sans-serif;
+    --fonte-rodape: Arial;
+}
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    background: var(--cor-fundo);
+  }
+
+.cabeçalho {
+    color: var(--cor-secundaria);
+    padding: 10px;
+    text-align: center;
+  }
+
+.cabecalho-img {
+    width: 123px;
+    margin: auto;
+    padding-bottom: 30px;
+    padding: 10px;
+    margin: 17px;
+
+}
+
+.cabecalho__menu {
+    text-align: center;
+    gap : 10px;
+    margin-top: 10px;
+}
+
+.cabecalho__menu :hover {
+    color: var(--cor-hover);
+}
+
+.cabecalho__menu__link {
+    font-family:var(--fonte-primaria);
+    font-size: 19px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.titulo {
+  text-align: center;
+  margin-top: 50px;
+  font-family: var(--fonte-primaria);
+  color: var(--cor-secundaria);
+}
+
+.titulo-mark {
+  text-align: center;
+  color: var(--cor-terciaria);
+}
+
+.titulo-sobre {
+  color: var(--cor-terciaria);
+  font-size: 50px;
+  font-family: var(--fonte-primaria);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.titulo-sobre-eta {
+  font-size: 30px;
+  color: var(--cor-terciaria);
+  font-family: var(--fonte-primaria);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.titulo-sobre-par {
+  color: var(--cor-terciaria);
+  font-size: 50px;
+  font-family: var(--fonte-primaria);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.titulo-sobre-fun {
+  font-size: 40px;
+  color: var(--cor-terciaria);
+  font-family: var(--fonte-primaria);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.titulo-mark {
+  color: var(--cor-terciaria);
+  text-align: center;
+  font-family: var(--fonte-primaria);
+}
+
+.video {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.descricao {
+  font-family: var(--fonte-primaria);
+  color: var(--cor-secundaria);
+  width: 370px;
+  padding: 10px;
+  margin: 25px auto 0 auto; /* centraliza o container */
+  text-align: left; /* texto começa na esquerda */
+}
+
+.objetivos {
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-primaria);
+  text-align: left; /* garantir que os itens comecem à esquerda */
+  margin-top: 25px;
+  padding: 10px;
+  list-style: none;
+}
+
+
+.rodape {
+    padding: 7px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-rodape);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    font-weight: 400;
+    
+}
+
+.rodape-link {
+  text-decoration: none;
+  color: rgb(1, 180, 180);
+}
+
+.nome-participantes {
+  color: var(--cor-nome);
+  text-align: left;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+  font-family: var(--fonte-primaria);
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* empilha tudo */
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  gap: 1px;
+}
+
+.side-image {
+  width: 40%;        /* imagem grande, mas com segurança */
+  max-width: 280px;  /* evita explodir a UI */
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+/* Utilitário: centraliza o bloco no pai, mantendo o texto alinhado à esquerda */
+.center-left {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px; /* default, ajuste conforme necessário */
+  text-align: left;
+}
+}
+
+@media (max-width: 325px) {
+
+.cabeçalho {
+    color: var(--cor-secundaria);
+    padding: 10px;
+    text-align: center;
+  }
+
+.cabecalho-img {
+    width: 100px;
+}
+
+.cabecalho__menu {
+    text-align: center;
+    gap : 10px;
+    margin-top: 10px;
+}
+
+.cabecalho__menu :hover {
+    color: var(--cor-hover);
+}
+
+.cabecalho__menu__link {
+    font-family:var(--fonte-primaria);
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.titulo {
+  text-align: center;
+  margin-top: 50px;
+  font-family: var(--fonte-primaria);
+  color: var(--cor-secundaria);
+}
+
+.titulo-mark {
+  text-align: center;
+  color: var(--cor-terciaria);
+}
+
+.titulo-sobre {
+  color: var(--cor-terciaria);
+  font-size: 47px;
+  font-family: var(--fonte-primaria);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.titulo-sobre-eta {
+  font-size: 30px;
+  color: var(--cor-terciaria);
+  font-family: var(--fonte-primaria);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.titulo-sobre-fun {
+  font-size: 30px;
+  color: var(--cor-terciaria);
+  font-family: var(--fonte-primaria);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.titulo-sobre-par {
+  font-size: 30px;
+  color: var(--cor-terciaria);
+  font-family: var(--fonte-primaria);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.titulo-mark {
+  color: var(--cor-terciaria);
+  text-align: center;
+  font-family: var(--fonte-primaria);
+}
+
+.video {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.descricao {
+  font-family: var(--fonte-primaria);
+  color: var(--cor-secundaria);
+  width: 250px;
+  padding: 20px;
+  margin: 25px auto 0 auto; /* centraliza o bloco no layout */
+  text-align: left; /* texto alinhado à esquerda, mesmo com o bloco centralizado */
+}
+
+.objetivos {
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-primaria);
+  text-align: left;
+  margin-top: 25px;
+  padding: 10px;
+  list-style: none;
+}
+
+.rodape {
+    padding: 20px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-rodape);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    font-weight: 400;
+    
+}
+
+.rodape-link {
+  text-decoration: none;
+  color: rgb(1, 180, 180);
+}
+
+.nome-participantes {
+  color: var(--cor-nome);
+  text-align: left;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+  font-family: var(--fonte-primaria);
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* empilha tudo */
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  gap: 1px;
+}
+
+.side-image {
+  width: 40%;        /* imagem grande, mas com segurança */
+  max-width: 280px;  /* evita explodir a UI */
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+}
+/* Utilitário global: centraliza o bloco no pai, mantendo o texto alinhado à esquerda */
+.center-left {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px; /* ajuste conforme necessário */
+  width: 100%;
+  text-align: left;
+}

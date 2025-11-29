@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="cabecalho">
+    <img class="cabecalho-img" src="imagens/Logo-cjv.png" alt="">
+    <img class="cabecalho-img" src="imagens/logo-czc-1.png" alt="">
+        <nav class="cabecalho__menu"> 
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="sobre-o-projeto.html">Projeto</a>
+            <a class="cabecalho__menu__link" href="participantes.html">Participantes</a>
+        </nav>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.cabecalho__menu__link').classList.toggle('active');
+        });
+    </script>
+    </header>
+    <h1 class="titulo-sobre">Problema / Justificativa</h1>
+    <p class="descricao">Pessoas com deficiência visual enfrentam diariamente desafios na locomoção, especialmente em ambientes desconhecidos ou com obstáculos inesperados. Muitos dispositivos comerciais são caros e inacessíveis.
+Dessa forma, desenvolver um dispositivo de baixo custo, eficiente e portátil pode trazer autonomia, segurança e inclusão.
+</p>
+
+    <h2 class="titulo-sobre">Objetivos Geral</h2>
+    <p class="descricao">Construir um dispositivo eletrônico de assistência que identifique obstáculos próximos e emita alertas vibratórios e/ou sonoros para auxiliar na mobilidade de pessoas com deficiência visual.
+</p>
+
+    <h2 class="titulo-sobre">Objetivos Geral</h2>
+    <ul class="objetivos">
+        <li>- Criar um protótipo funcional utilizando Arduino.</li>
+        <li>- Integrar sensores de distância capazes de detectar obstáculos.</li>
+        <li>- Programar alertas vibratórios ou sonoros conforme a proximidade do objeto.</li>
+        <li>- Testar o protótipo em situações reais simuladas.</li>
+        <li>- Avaliar custo, eficiência e melhorias futuras.</li>
+      </ul>
+
+      <h2 class="titulo-sobre">Etapas do Projeto</h2>
+      <h3 class="titulo-sobre-eta">Etapa 1 – Pesquisa e Fundamentação Teórica</h3>
+    <ul class="objetivos">
+        <li>- Estudo sobre tecnologias assistivas.</li>
+        <li>- Pesquisa sobre sensores ultrassônicos, vibração, buzzers e microcontroladores.</li>
+        <li>- Referências sobre dispositivos semelhantes no mercado.</li>
+        <li>- Entendimento das necessidades reais de pessoas com deficiência visual.</li>
+      </ul>
+
+      <h3 class="titulo-sobre-eta">Etapa 2 – Planejamento do Sistema</h3>
+    <ul class="objetivos">
+        <li>- Definição da estrutura do dispositivo (pulseira, bengala, caixa portátil, óculos).</li>
+        <li>- Seleção dos componentes:</li>
+        <li>* Arduino UNO ou Nano</li>
+        <li>* Sensor ultrassônico HC-SR04</li>
+        <li>* Bateria 9V ou powerbank</li>
+        <li>* Jumpers</li>
+        <li>* Protoboard</li>
+        <li>* Buzzer piezo</li>
+      </ul>
+
+      <h3 class="titulo-sobre-eta">Etapa 3 – Montagem do Circuito</h3>
+    <ul class="objetivos">
+        <li>- Conectar o sensor ultrassônico ao Arduino.</li>
+        <li>- Instalar o buzzer e o motor vibratório nas saídas digitais.</li>
+        <li>- Energia: ligar bateria ou cabo USB.</li>
+        <li>- Testes de continuidade e verificação do funcionamento dos componentes.</li>
+      </ul>
+
+      <h3 class="titulo-sobre-eta">Etapa 5 – Construção da Estrutura Física</h3>
+    <ul class="objetivos">
+        <li>- Decisão da forma final do dispositivo (pulseira, óculos, caixa na cintura).</li>
+        <li>- Fixação do sensor na direção frontal.</li>
+        <li>- Organização interna dos fios.</li>
+        <li>- Vedação externa para proteção.</li>
+        <li>- Melhorar ergonomia, peso e conforto.</li>
+      </ul>
+
+      <h3 class="titulo-sobre-eta">Etapa 6 – Testes de Campo</h3>
+    <ul class="objetivos">
+        <li>- Testar o dispositivo com obstáculos reais.</li>
+        <li>- Verificar precisão do sensor.</li>
+        <li>- Avaliar intensidade do alerta.</li>
+        <li>- Analisar autonomia da bateria.</li>
+        <li>- Ajustar o código ou a estrutura se necessário.</li>
+      </ul>
+
+      <h3 class="titulo-sobre-eta">Etapa 7 – Avaliação e Resultados</h3>
+    <ul class="objetivos">
+        <li>- Discussão sobre o desempenho.</li>
+        <li>- Comparação com dispositivos comerciais.</li>
+        <li>- Pontos fortes: baixo custo, simplicidade, acessibilidade.</li>
+        <li>- Pontos a melhorar: tamanho, autonomia, expansão para GPS ou câmera.</li>
+      </ul>
+
+      <h3 class="titulo-sobre-eta">Etapa 8 – Conclusão</h3>
+      <p class="descricao">O dispositivo se mostrou eficiente em detectar obstáculos próximos e emitir alertas que aumentam a segurança da locomoção. O projeto apresenta potencial para evoluir para um produto real de assistência inclusiva.
+      </p>
+
+      <h3 class="titulo-sobre-eta">Etapa 9 – Possíveis Melhorias Futuras</h3>
+    <ul class="objetivos">
+        <li>- Adicionar sensor infravermelho para maior precisão.</li>
+        <li>- Integração com aplicativo via Bluetooth.</li>
+        <li>- Adicionar áudio descritivo.</li>
+        <li>- Utilizar bateria recarregável embutida.</li>
+        <li>- Transformar em óculos inteligentes ou bengala ultrassônica.</li>
+      </ul>
+
+      <h3 class="titulo-sobre-eta">Etapa 10 – Materiais Utilizados</h3>
+    <ul class="objetivos">
+        <li>- Arduino UNO / Nano</li>
+        <li>- Sensor HC-SR04</li>
+        <li>- Motor vibratório</li>
+        <li>- Buzzer</li>
+        <li>- Protoboard</li>
+        <li>- Jumpers</li>
+        <li>- Caixa para componentes</li>
+        <li>- Bateria</li>
+        <li>- Cabo USB</li>
+        <li>- Elementos de fixação (velcro, abraçadeiras e etc.)</li>
+      </ul>
+      
+    <h2 class="titulo-sobre-fun">Funcionamento</h2>
+    <p class="descricao">O óculos contará com uma câmera integrada e sensores de proximidade. O 
+processamento das imagens e dados será feito utilizando o Arduino (ou módulos 
+complementares como ESP32-CAM). Quando um obstáculo ou pessoa for detectado, o 
+usuário receberá um alerta por meio de vibração ou sinal sonoro. Dessa forma, será 
+possível facilitar a locomoção e aumentar a percepção do ambiente.</p>
+    <footer class="rodape">
+  <div class="footer-content">
+    <h3>João Vitor Viana 
+      <br>
+    Desenvolvedor Front-End</h3>
+
+    <p>Transformando ideias em interfaces funcionais e responsivas.</p>
+
+    <div class="footer-links">
+      <a class="rodape-link" href="https://GitHub.com/jvvianaa" target="_blank">GitHub</a>
+      <a class="rodape-link" href="https://www.linkedin.com/in/seuusuario" target="_blank">LinkedIn</a>
+      <a class="rodape-link" href="https://Instagram.com/jv.vianaa_" target="_blank">Instagram</a>
+    </div>
+    <p>joaosantosvn@gmail.com</p>
+
+    <p class="copy">© 2025 — Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title></title>
+</head>
+<body>
+    <header class="cabecalho">
+      <img class="cabecalho-img" src="imagens/Logo-cjv.png" alt="">
+      <img class="cabecalho-img" src="imagens/logo-czc-1.png" alt="">
+        <nav class="cabecalho__menu"> 
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="sobre-o-projeto.html">Projeto</a>
+            <a class="cabecalho__menu__link" href="participantes.html">Participantes</a>
+        </nav>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.cabecalho__menu__link').classList.toggle('active');
+        });
+    </script>
+    </header>
+    <h1 class="titulo"> CONSTRUÇÃO DE UM
+DISPOSITIVO COM ARDUINO PARA AUXILIAR
+      <p class="titulo-mark">PESSOAS COM DEFICIÊNCIA VISUAL</p>
+    </h1>
+
+    <video class="video" src="imagens/projeto-video.mp4" autoplay loop muted playsinline preload="auto"></video>
+    <script>
+      // Garantir autoplay programático: navegadores modernos costumam bloquear autoplay com som.
+      // Definimos muted para que o autoplay funcione sem interação do usuário.
+      (function () {
+        const video = document.querySelector('video.video');
+        if (!video) return;
+        // Suporte para autoplay em navegadores que necessitam da chamada play() programática
+        video.muted = true; // necessário para autoplay sem interação em muitos navegadores
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise.catch((error) => {
+            console.warn('Falha ao tentar reproduzir o vídeo automaticamente:', error);
+            // fallback: podemos exibir uma UI para solicitar interação do usuário
+          });
+        }
+      })();
+    </script>
+    <footer class="rodape">
+  <div class="footer-content">
+    <h3>João Vitor Viana 
+      <br>
+    Desenvolvedor Front-End</h3>
+
+    <p>Transformando ideias em interfaces funcionais e responsivas.</p>
+
+    <div class="footer-links">
+      <a class="rodape-link" href="https://GitHub.com/jvvianaa" target="_blank">GitHub</a>
+      <a class="rodape-link" href="https://www.linkedin.com/in/jo%C3%A3o-vitor-viana-17753428a/" target="_blank">LinkedIn</a>
+      <a class="rodape-link" href="https://Instagram.com/jv.vianaa_" target="_blank">Instagram</a>
+    </div>
+    <p>joaosantosvn@gmail.com</p>
+
+    <p class="copy">© 2025 — Todos os direitos reservados.</p>
+  </div>
+</footer>
+</body>
+</html>
